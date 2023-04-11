@@ -51,6 +51,10 @@ function endGame() {
       <p class="end-emoji">${emoji}</p>
       </div>
       `;
+
+  setTimeout(() => {
+    location.reload();
+  }, 4000);
 }
 
 function render() {
