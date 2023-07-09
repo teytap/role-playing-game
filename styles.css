@@ -36,9 +36,13 @@ main {
     gap: 2rem;
   }
 }
-
+.vs {
+  color: #fcc02a;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
 .character-card {
-  height: 16rem;
+  height: 15rem;
   margin-top: 0.5rem;
   width: 94vw;
   max-width: 230px;
@@ -91,6 +95,9 @@ main {
     border: 0.2rem solid #000721;
     height: 28rem;
     width: 37vw;
+  }
+  .vs {
+    font-size: 2.5em;
   }
 }
 
