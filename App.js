@@ -56,7 +56,7 @@ function endGame() {
 
   setTimeout(() => {
     location.reload();
-  }, 3000);
+  }, 3500);
 }
 
 function render() {

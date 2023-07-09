@@ -52,6 +52,7 @@ class Character {
               <p class="health">health: <b> ${health}/${maxHealth} </b></p>
               ${healthBar}
               <div class="dice-container">${diceHtml}</div>
+             
             </div>`;
   }
 }
