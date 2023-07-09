@@ -42,7 +42,7 @@ function endGame() {
   let emoji = wizard.health > monster.health ? "🔮" : "☠️";
   let message =
     wizard.health < monster.health
-      ? "The monsters Victorious"
+      ? "The Monsters Victorious"
       : wizard.health > monster.health
       ? "The Wizard Wins"
       : "No victors - all creatures are dead";
@@ -56,7 +56,7 @@ function endGame() {
 
   setTimeout(() => {
     location.reload();
-  }, 3500);
+  }, 4000);
 }
 
 function render() {
