@@ -23,11 +23,13 @@ function attack() {
     } else if (monster.dead) {
       if (monstersArray.length > 0) {
         isWaiting = true;
+        document.getElementById("monster").style.animation = "fadeOut";
+
         setTimeout(() => {
           monster = getNewMonster();
           render();
           isWaiting = false;
-        }, 1500);
+        }, 1000);
       } else {
         setTimeout(() => endGame(), 1500);
       }
@@ -54,11 +56,13 @@ function endGame() {
 
   setTimeout(() => {
     location.reload();
-  }, 4000);
+  }, 3000);
 }
 
 function render() {
   document.getElementById("hero").innerHTML = wizard.getCharacterHtml();
+  document.getElementById("monster").style.animation =
+    "1.5s ease-out 0s 1 slideInFromRight";
   document.getElementById("monster").innerHTML = monster.getCharacterHtml();
 }
 
