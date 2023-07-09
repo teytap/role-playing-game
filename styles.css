@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   /* background: rgb(51, 43, 55);
   background: radial-gradient(
     circle,
@@ -10,19 +11,26 @@ body {
   ); */
   background-image: url("images/me-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   color: #fff;
   font-family: "MedievalSharp", cursive;
   height: 100vh;
   width: 100%;
+  padding-top: 20px;
 }
-
+h1 {
+  color: #fcc02a;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 3px red;
+}
 main {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   margin-top: 0.5rem;
 }
@@ -30,21 +38,18 @@ main {
 @media (min-width: 550px) {
   main {
     flex-direction: row;
-    margin: 6vh 5vw;
+    margin: 1.5vh 3vw;
     justify-content: center;
+    align-items: center;
     width: 86vw;
     gap: 2rem;
   }
 }
-.vs {
-  color: #fcc02a;
-  font-size: 1.5em;
-  margin-top: 10px;
-}
+
 .character-card {
-  height: 15rem;
-  margin-top: 0.5rem;
-  width: 94vw;
+  height: 17rem;
+  margin: 0.5rem;
+  width: 38vw;
   max-width: 230px;
   padding: 1vh 1vw;
   font-size: 1.6rem;
@@ -93,11 +98,8 @@ main {
 @media (min-width: 550px) {
   .character-card {
     border: 0.2rem solid #000721;
-    height: 28rem;
+    height: 27rem;
     width: 37vw;
-  }
-  .vs {
-    font-size: 2.5em;
   }
 }
 
@@ -126,7 +128,7 @@ main {
 
 @media (min-width: 550px) {
   .avatar {
-    width: 25vh;
+    width: 24vh;
   }
 }
 
